@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="40dp"
+        android:gravity="center"
+        android:text="Currency Converter"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_below="@id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:text="Amount to convert:"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/inputField"
+        android:layout_below="@id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="61dp"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_below="@id/inputField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="61dp"
+        android:text="From:"
+        android:textSize="20sp" />
+
+    <Spinner
+        android:id="@+id/initialCurrency"
+        android:layout_below="@id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="61dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_below="@id/initialCurrency"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="61dp"
+        android:text="To:"
+        android:textSize="20sp" />
+
+    <Spinner
+        android:id="@+id/finalCurrency"
+        android:layout_below="@id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="61dp" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_below="@id/finalCurrency"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="61dp"
+        android:text="Converted amount:"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/rate"
+        android:layout_below="@id/result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="61dp"
+        android:text="Rate:"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/convertButton"
+        android:layout_below="@id/rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:layout_marginLeft="90dp"
+        android:onClick="convert"
+        android:text="Convert" />
+
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_below="@id/rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:layout_marginLeft="220dp"
+        android:onClick="reset"
+        android:text="Reset" />
+
+</RelativeLayout>

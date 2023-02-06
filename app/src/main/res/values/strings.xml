@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Currency Converter</string>
+    <string-array name="txtGroup">
+        <item>USD</item>
+        <item>GBP</item>
+        <item>MYR</item>
+        <item>SGD</item>
+        <item>JPY</item>
+    </string-array>
+</resources>
